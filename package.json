@@ -1,0 +1,23 @@
+{
+  "name": "ubee-sweet",
+  "version": "1.0.0",
+  "description": "Distributed Platform Based On Ubee Watch",
+  "main": "ubee-sweet-provider-demo.js",
+  "dependencies": {
+    "socket.io-client": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badillosoft/ubee-sweet.git"
+  },
+  "author": "Alan Badillo Salas",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/badillosoft/ubee-sweet/issues"
+  },
+  "homepage": "https://github.com/badillosoft/ubee-sweet#readme"
+}
