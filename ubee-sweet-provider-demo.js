@@ -8,6 +8,9 @@ socket.on("connect", () => {
     socket.emit("watch:login", "abc123", "my-app", result => {
         console.log(result);
     });
+    socket.emit("watch:login", "abc123", "my-app2", result => {
+        console.log(result);
+    });
 });
 
 socket.on("ambient:state", (token, ambient, code, protocol) => {
