@@ -15,6 +15,10 @@ socket.on("connect", () => {
 
 socket.on("ambient:state", (token, ambient, code, protocol) => {
     console.log(token.slice(0, 8), ambient, code, protocol);
+    if (ambient === "my-app" && code === "srg:login") {
+        socket.emit("ambient:state", token, "srg:login:response", `Hi srg:login`);
+    }
+
     if (code === "ping") {
         console.log("ping", code);
         socket.emit("ambient:state", token, "pong");
